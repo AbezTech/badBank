@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>BadBank</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="contenedorcabecera">
+            <img class="imagenlogo" src="images/BadBankMIT.png">
+            <nav class="navegacion">
+                <ul class="navegacionlista">
+                    <li data-tab-target="#crear">Create</li>
+                    <li data-tab-target="#login">Login</li>
+                    <li data-tab-target="#data">All Data</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <form class="tab-content form">
+       
+            <div id="crear" data-tab-content class="active">
+                <div class="parteuno">
+                    <h1 class="titulocrearcuenta">
+                        CREAR CUENTA
+                    </h1>
+                    <div class="nombre dato">
+                        <label class="label">Nombre:</label>
+                        <input type="text" id="crearnombre" class="nombreuno" required>
+                    </div>
+                    <div class="correo dato">
+                        <label class="label">Correo:</label>
+                        <input type="text" id="crearcorreo" class="nombreuno" required>
+                        <span class="letrasrojasdos">Pon un correo Real</span>
+                    </div>
+                    <div class="contraseña dato">
+                        <label class="label">Contraseña:</label>
+                        <input type="password" id="contrase" class="nombreuno" required><br>
+                        <span class="letrasrojas">Minimo 6 Caracteres</span>
+                    </div>
+                    <button class="botonCrear" type="submit">Crear Cuenta</button>
+                </div>
+            </div>
+            <div id="login" data-tab-content>
+                <div class="parteuno">
+                    <h1 class="titulocrearcuenta">
+                        Log In
+                    </h1>
+                    <div class="nombre">
+                        <label class="label">Nombre:</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div class="contraseña">
+                        <label class="label">Contraseña:</label>
+                        <input type="password" id="contrasena">
+                    </div>
+                    <button class="botonSubmit">Log In</button>
+                </div>
+            </div>
+            <div id="data" data-tab-content>
+                <div class="parteuno">
+                    <h3 class="correoregistrados">CORREOS REGISTRADOS</h3>
+                   <p style="margin-top: 3rem;"   class="emailregistrado"></p>
+            </div>
+       
+        </form>
+    <script src="/script.js"></script>
+    <script src="/scriptprofile.js"></script>
+</body>
+
+</html>

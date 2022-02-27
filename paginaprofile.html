@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>BadBank</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="contenedorcabecera">
+            <img class="imagenlogo" src="images/BadBankMIT.png">
+            <nav class="navegacion">
+                <ul class="navegacionlista">
+                    <li data-tab-target="#depositar">Depositar</li>
+                    <li data-tab-target="#retirar">Withdrawal</li>
+                    <li data-tab-target="#balance">Balance</li>
+                </ul>
+                <button class="cerrar">Cerrar Sesion</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="tab-content">
+
+
+
+
+        <div id="depositar"  data-tab-content>
+            <div class="parteuno">
+                <h1 class="titulodepositar">
+                    Depositar
+                </h1>
+                <div class="nombre dato">
+                    <label class="label">Cantdidad</label>
+                    <input type="number" id="deposito">
+                </div>
+                <button  class="botonDeposito"  type="submit">Depositar</button>
+            </div>
+        </div>
+
+
+
+
+        <div id="retirar" data-tab-content>
+            <div class="parteuno">
+                <h1 class="titulocretirar">
+                   Retirar
+                </h1>
+                <div class="nombre">
+                    <span class="totalBalance">Balance Total:</span><p class="tubalance"></p>
+                    <label class="label">Cantidad</label>
+                    <input type="number" id="retirardinero">
+                </div>
+               
+                <button class="botonRetirar" type="submit">Retirar</button>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="balance" data-tab-content   class="active" >
+            <div class="parteuno">
+                <h1 class="titulocbalance">
+                    Balance
+                </h1>
+               <span class="tubalancetotales">Tu balance es:</span><p class="balancetotal"></p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="scriptprofile.js"></script>
+</body>
+
+</html>

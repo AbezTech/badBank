@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecera {
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+}
+
+.contenedorcabecera {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.navegacionlista {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    gap: 5rem;
+}
+
+.imagenlogo {
+    width: 20%;
+}
+li:hover{
+    transform: scale(1.1);
+   text-decoration: underline 2px black;
+  
+}
+.contenedorprincipal{
+    width: 100%;
+    background-color:rgb(242, 242, 242);
+    height: 100vh;
+}
+#login, #crear{
+    margin-top: 5rem;
+}
+.parteuno{
+    box-shadow: 2px 1px 8px 4px rgba(181, 193, 215, 1);
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+    background-color:rgb(242, 242, 242);
+    padding-bottom: 3rem;
+
+}
+button{
+    padding: 0.5rem;
+    width: 40%;
+    color: white;
+    background-color: #1192ee;
+    box-shadow: 2px 1px 8px 4px rgba(181, 193, 215, 1);
+    border-radius: 15px;
+    font-weight: 700;
+    margin: 0 auto;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+[data-tab-content]{
+    display: none;
+    margin-top: 3rem;
+}
+.navegacion{
+    display: flex;
+    align-items: center;
+}
+.active[data-tab-content]{
+    display: block;
+}
+.cerrar{
+    padding: 0.5rem;
+    background-color: #1192ee;
+    color: white;
+    border-radius: 20px;
+    margin-left: 4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.cerrar:hover{
+    transform: scale(1.05);
+}
+.letrasrojas{
+    color: red;
+    display: none;
+}
+.letrasrojasdos{
+    color: red;
+    display: none;
+}
